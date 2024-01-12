@@ -62,8 +62,12 @@
         <h2>Habilidades</h2>
         <table>
             <tr>
-                <th>Scrum</th>
-                <th>avanzado</th>
+                <th>Desacripcion</th>
+                <th>Nivel</th>
+            </tr>
+            <tr>
+                <td>Scrum</td>
+                <td>avanzado</td>
             </tr>
             <tr>
                 <td>SQL</td>
@@ -95,6 +99,7 @@
             </tr>
             <!-- Más filas según tus habilidades -->
         </table>
+        <button id="addSkill">Añadir Habilidad nueva</button>
         <h2>Proyectos</h2>
         <ul class="mis-proyectos">
             <li> <a href="miPortafolioWeb/detalleProyecto.html"> gestion de inventarios </a></li>
@@ -109,9 +114,10 @@
 
             <label for="message">Mensaje:</label>
             <textarea id="message" name="user_message"></textarea>
-
-            <input type="submit" value="Contactar">
+            <button type="submit" onclick="solicitarCorreo()">Contactar</button>
+            <!--input type="submit" value="Contactar" onclick="solicitarCorreo()"-->
         </form>
     </div>
+    <script src="script.js"></script>
     </body>
     </html>
